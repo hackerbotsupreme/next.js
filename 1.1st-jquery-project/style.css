@@ -1,0 +1,34 @@
+/* jqery selectors  */
+#div1{
+    margin: auto ;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    background-color: cadetblue;
+    height: 300px ;
+    width: 300px ;
+    position: relative;
+}
+#div2{
+    margin: auto ;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: yellow;
+    height: 300px ;
+    width: 300px ;
+    position: relative;
+}
+#div3{
+    margin: auto ;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    background-color: rgb(197, 52, 230);
+    height: 300px ;
+    width: 300px ;
+    position: relative;
+}
+/* jqery selectors  */
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jqery first project</title>
+    <style>
+      #img{
+        height: 250px;
+        width: 250px;
+        opacity: 0.4;
+        position: absolute;
+      }
+      .div1{
+        height: 250px;
+        width: 250px;
+        border: 5px solid black;
+        margin: 50px;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+      .p1{
+        text-align: center;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hye aloke,  yu are learning </h1>
+    <p>just an example of what the jquery is capable of</p>
+    <p>
+      lets take fade in-out animations for it , for js we needed 10-15 lines of
+      code for that in js
+    </p>
+    <p>but it will only take 1 line in jquery to do that</p>
+    <p>we only wrote $('#img1').fadeToggle(); this in js file and boom</p>
+    <img
+      src="https://img.indianautosblog.com/crop/1200x675/2020/08/27/royal-enfield-classic-500-tribute-black-rhs-21a1.jpg"
+      alt="js"
+      id="img2"
+    />
+    <button onclick="fadein()">FADE</button>
+    <!-- this  fadein function fades out the image if it is there on the screen and its also reverses the pic on click teice -->
+
+    <p>
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    </p>
+
+    <br />
+    <h1>jquery selectors</h1>
+    <p>
+      we are all aware of accesing html element in js, we have three different
+      methods
+    </p>
+    <p>for that getelementbyid , getelementbyclassname , getelementbytagname</p>
+    <p>
+      and for that we can use jqery selectors in jquery instead of all above
+    </p>
+    <p>
+      all we have to do is to use a dollar sign and pass the id or class with
+      particular symbol
+    </p>
+    <br />
+    <div id="div1" class="divvv">
+      <p id="p1">This is paragraph 1</p>
+      <p class="para">This is paragraph 2</p>
+    </div>
+    <div id="div2" class="divvv">
+      <p class="para">This is paragraph 3</p>
+      <p>This is paragraph 4</p>
+    </div>
+    <div id="div3">
+      <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </div>
+    <button onclick="hello()">click me</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    </p>
+    <br />
+    <br />
+    <br />
+    <h1>Events in jqery</h1>
+    <img
+      src="images/Website_illustration.png"
+      alt="javascript"
+      id="img1"
+      width="250px"
+    />
+    <button id="btn" onclick="sdjfaks()">Click Me</button>
+    <!-- do not use funcyion names like click or else it will not work  -->
+    <!-- <button id="btn" onclick="click()">Click Me</button> -->
+    <h1> do not use funcyion names like click or else it will not work
+        button id="btn" onclick="click()"</h1>
+        <br />
+        <br />
+        <p>
+          /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </p>
+        <br />
+        <br />
+        <h1>effects in jquery </h1>
+        <button id="btn1">Hide </button>
+        <button id="btn2">show  </button>
+        <button id="btn3">toggle </button>
+        <br>
+        <br>
+        <button id="btn4">Fade-in </button>
+        <button id="btn5">fade-out  </button>
+        <button id="btn6">fade-toggle </button>
+        <br>
+        <br>
+        <button id="btn7">slide-Up</button>
+        <button id="btn8">slide-Down </button>
+        <button id="btn9">slide-Toggle </button>
+        <button id="btn10">stop</button>
+        <img src="images/Website_illustration.png"  alt="javascript" id="img3" width="250px">
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="btnnn">Animate</button>
+        <br>
+        <br>
+        <div>
+          <img src="images/Website_illustration.png" alt="Somathing" id="img">
+        </div>
+        <br />
+        <br />
+        <p>
+          /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </p>
+        <br />
+        <br />
+        <h1>jquery callbacks and chaining </h1>
+        <p>a callback function is a funcrion that is passed to another function as an argument , and that particular function will get executed later on .</p>
+        <p>what is means is if yu want to perform more than one task at a time then we have the concept of callback function </p>
+        <p>for example , if we have an image and we want to apply more than one effect on that picture  but the thing is we want the <br>second effect after the first one completes then in that case we have to create a callbackfunction that will be called  nly after the first effect is done  </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="btnnn..">Animate</button>
+        <br>
+        <br>
+        <div>
+          <img src="images/Website_illustration.png" alt="Somathing" id="imggg">
+        </div>
+        <br />
+        <br />
+        <br />
+        <p>
+          /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </p>
+        <br />
+        <br />
+        <h1>jquery dom manipulation</h1>
+        <br>
+        <br>
+        <br>
+        <h2>click on the button  present below </h2>
+        <span id="span1"></span>
+        <div class="div1" style="background-color: aqua;">
+          <p class="p1" id="idp1">This is <i> box 1 </i></p>
+        </div>
+        <button id="btn1">click me</button>
+        <br />
+        <br />
+        <p>
+          /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </p>
+        <br />
+        <br />
+        <h1>jquery dom manipulation</h1>
+        <br>
+        <br>
+        <h1>jquery ui </h1>
+        <p>first go to jquey ui </p>
+        <p>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice</p>
+        <p>Query continues to maintain its position as the JavaScript library for the year 2023.</p>
+        <p>download the stable version and add it to yur project </p>
+
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- adding jquery using cdn cdnjs cdn  -->
+  <!-- <script src="jquery/jquery-3.7.1.js" type="text/javascript"></script>adding jqery via downloading  -->
+  <script src="jq.js" type="text/javascript"></script>
+</html>
