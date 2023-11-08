@@ -1,0 +1,201 @@
+const json =  {
+    questions:[
+      {
+        type: "matrixdynamic",
+        name: "frameworksRateMatrix",
+        "minRowCount": 4,
+        "maxRowCount": 4,
+        "valueName": "frameworksRate",
+        title: "Please tells us about JavaScript frameworks you are using (Matrix Dynamic)",
+        columns: [
+          {
+            "name": "framework",
+            "title": "Framework",
+            "cellType": "text",
+            "readOnly": true
+          },
+          {
+            name: "using",
+            title: "Do you use it?",
+            "isRequired": true,
+            choices: [
+              "Yes",
+              "No"
+            ],
+            cellType: "radiogroup"
+          },
+          {
+            name: "experience",
+            title: "How long do you use it?",
+            cellType: "dropdown",
+            "visibleIf": "{row.using} = 'Yes'",
+            "isRequired": true,
+            choices: [
+              {
+                value: 5,
+                text: "3-5 years"
+              },
+              {
+                value: 2,
+                text: "1-2 years"
+              },
+              {
+                value: 1,
+                text: "less then a year"
+              }
+            ]
+          }
+        ]
+      },
+        {
+            type: "paneldynamic",
+          name: "frameworksRatePanel",
+          "minPanelCount":  4, "maxPanelCount":  4,
+          "valueName":  "frameworksRate",
+            title: "Please tells us about JavaScript frameworks you are using (Panel Dynamic)",
+          templateElements: [
+            {
+              "name": "framework",
+              "title": "Framework",
+              "type": "text",
+              "readOnly":  true
+            },
+            {
+              name: "using",
+              title: "Do you use it?",
+              "type": "radiogroup",
+              "colCount":  0,
+              "startWithNewLine": false,
+              "isRequired": true,
+              choices: [
+                "Yes",
+                "No"
+              ],
+              cellType: "radiogroup"
+            },
+            {
+              name: "experience",
+              title: "How long do you use it?",
+              "type": "dropdown",
+              "visibleIf": "{panel.using} = 'Yes'",
+              "isRequired": true,
+              "startWithNewLine": false,
+              choices: [
+                {
+                  value: 5,
+                  text: "3-5 years"
+                },
+                {
+                  value: 2,
+                  text: "1-2 years"
+                },
+                {
+                  value: 1,
+                  text: "less then a year"
+                }
+              ]
+            }
+          ]
+        }
+
+    ]
+};const themeJson = {
+  "cssVariables": {
+    "--sjs-general-backcolor": "rgba(255, 255, 255, 1)",
+    "--sjs-general-backcolor-dark": "rgba(248, 248, 248, 1)",
+    "--sjs-general-backcolor-dim": "rgba(243, 243, 243, 1)",
+    "--sjs-general-backcolor-dim-light": "rgba(249, 249, 249, 1)",
+    "--sjs-general-backcolor-dim-dark": "rgba(243, 243, 243, 1)",
+    "--sjs-general-forecolor": "rgba(0, 0, 0, 0.91)",
+    "--sjs-general-forecolor-light": "rgba(0, 0, 0, 0.45)",
+    "--sjs-general-dim-forecolor": "rgba(0, 0, 0, 0.91)",
+    "--sjs-general-dim-forecolor-light": "rgba(0, 0, 0, 0.45)",
+    "--sjs-primary-backcolor": "rgba(25, 179, 148, 1)",
+    "--sjs-primary-backcolor-light": "rgba(25, 179, 148, 0.1)",
+    "--sjs-primary-backcolor-dark": "rgba(20, 164, 139, 1)",
+    "--sjs-primary-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-primary-forecolor-light": "rgba(255, 255, 255, 0.25)",
+    "--sjs-base-unit": "8px",
+    "--sjs-corner-radius": "4px",
+    "--sjs-secondary-backcolor": "rgba(255, 152, 20, 1)",
+    "--sjs-secondary-backcolor-light": "rgba(255, 152, 20, 0.1)",
+    "--sjs-secondary-backcolor-semi-light": "rgba(255, 152, 20, 0.25)",
+    "--sjs-secondary-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-secondary-forecolor-light": "rgba(255, 255, 255, 0.25)",
+    "--sjs-shadow-small": "0px 1px 2px 0px rgba(0, 0, 0, 0.15)",
+    "--sjs-shadow-medium": "0px 2px 6px 0px rgba(0, 0, 0, 0.1)",
+    "--sjs-shadow-large": "0px 8px 16px 0px rgba(0, 0, 0, 0.1)",
+    "--sjs-shadow-inner": "inset 0px 1px 2px 0px rgba(0, 0, 0, 0.15)",
+    "--sjs-border-light": "rgba(0, 0, 0, 0.09)",
+    "--sjs-border-default": "rgba(0, 0, 0, 0.16)",
+    "--sjs-border-inside": "rgba(0, 0, 0, 0.16)",
+    "--sjs-special-red": "rgba(229, 10, 62, 1)",
+    "--sjs-special-red-light": "rgba(229, 10, 62, 0.1)",
+    "--sjs-special-red-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-special-green": "rgba(25, 179, 148, 1)",
+    "--sjs-special-green-light": "rgba(25, 179, 148, 0.1)",
+    "--sjs-special-green-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-special-blue": "rgba(67, 127, 217, 1)",
+    "--sjs-special-blue-light": "rgba(67, 127, 217, 0.1)",
+    "--sjs-special-blue-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-special-yellow": "rgba(255, 152, 20, 1)",
+    "--sjs-special-yellow-light": "rgba(255, 152, 20, 0.1)",
+    "--sjs-special-yellow-forecolor": "rgba(255, 255, 255, 1)",
+    "--sjs-article-font-xx-large-fontSize": "64px",
+    "--sjs-article-font-xx-large-textDecoration": "none",
+    "--sjs-article-font-xx-large-fontWeight": "700",
+    "--sjs-article-font-xx-large-fontStyle": "normal",
+    "--sjs-article-font-xx-large-fontStretch": "normal",
+    "--sjs-article-font-xx-large-letterSpacing": "0",
+    "--sjs-article-font-xx-large-lineHeight": "64px",
+    "--sjs-article-font-xx-large-paragraphIndent": "0px",
+    "--sjs-article-font-xx-large-textCase": "none",
+    "--sjs-article-font-x-large-fontSize": "48px",
+    "--sjs-article-font-x-large-textDecoration": "none",
+    "--sjs-article-font-x-large-fontWeight": "700",
+    "--sjs-article-font-x-large-fontStyle": "normal",
+    "--sjs-article-font-x-large-fontStretch": "normal",
+    "--sjs-article-font-x-large-letterSpacing": "0",
+    "--sjs-article-font-x-large-lineHeight": "56px",
+    "--sjs-article-font-x-large-paragraphIndent": "0px",
+    "--sjs-article-font-x-large-textCase": "none",
+    "--sjs-article-font-large-fontSize": "32px",
+    "--sjs-article-font-large-textDecoration": "none",
+    "--sjs-article-font-large-fontWeight": "700",
+    "--sjs-article-font-large-fontStyle": "normal",
+    "--sjs-article-font-large-fontStretch": "normal",
+    "--sjs-article-font-large-letterSpacing": "0",
+    "--sjs-article-font-large-lineHeight": "40px",
+    "--sjs-article-font-large-paragraphIndent": "0px",
+    "--sjs-article-font-large-textCase": "none",
+    "--sjs-article-font-medium-fontSize": "24px",
+    "--sjs-article-font-medium-textDecoration": "none",
+    "--sjs-article-font-medium-fontWeight": "700",
+    "--sjs-article-font-medium-fontStyle": "normal",
+    "--sjs-article-font-medium-fontStretch": "normal",
+    "--sjs-article-font-medium-letterSpacing": "0",
+    "--sjs-article-font-medium-lineHeight": "32px",
+    "--sjs-article-font-medium-paragraphIndent": "0px",
+    "--sjs-article-font-medium-textCase": "none",
+    "--sjs-article-font-default-fontSize": "16px",
+    "--sjs-article-font-default-textDecoration": "none",
+    "--sjs-article-font-default-fontWeight": "400",
+    "--sjs-article-font-default-fontStyle": "normal",
+    "--sjs-article-font-default-fontStretch": "normal",
+    "--sjs-article-font-default-letterSpacing": "0",
+    "--sjs-article-font-default-lineHeight": "28px",
+    "--sjs-article-font-default-paragraphIndent": "0px",
+    "--sjs-article-font-default-textCase": "none"
+  },
+  "isPanelless": false
+}
+const survey = new Survey.Model(json);
+// You can delete the line below if you do not use a customized theme
+survey.applyTheme(themeJson);
+survey.onComplete.add((sender, options) => {
+    console.log(JSON.stringify(sender.data, null, 3));
+});
+survey.data = {'frameworksRate': [{'framework':'angular v1'},{'framework':'angular v2+'},{'framework':'react'}, {'framework':'vue'}]};
+
+
+$("#surveyElement").Survey({ model: survey });
