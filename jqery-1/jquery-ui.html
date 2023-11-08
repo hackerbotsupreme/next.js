@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="jquery-ui-dark/jquery-ui.css" />
+    <link rel="stylesheet" href="jquery-ui-dark/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="jquery-ui-dark/jquery-ui.theme.css" />
+    <!-- <link rel="stylesheet" href="jqueryUI/jquery-ui.css" />
+    <link rel="stylesheet" href="jqueryUI/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="jqueryUI/jquery-ui.theme.css" /> -->
+    <style>
+      #div1 {
+        height: 300px;
+        width: 300px;
+        border: 3px black solid;
+        border-radius: 25px;
+        position: relative;
+        margin: auto;
+      }
+      p {
+        text-align: center;
+        margin-top: 150px;
+        font-weight: bolder;
+      }
+      .box {
+        border: 5px solid black;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+      }
+      #sortable {
+        border: 2px solid black;
+        height: 20px;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+      }
+      #imageX{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>date picker widget in jquery-ui</h1>
+    <div id="div1">
+      <p>Date<input type="text" id="date" placeholder="Enter Date" /></p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>ToolTip</h1>
+    <p>
+      tooltip is basically a msg which appears when a cursor is positioned over
+      an icon / or other elements in a webpage
+    </p>
+    <p>go to the tooltip widget of the jquery-ui</p>
+    <div id="div1">
+      <p>
+        Name <input type="text" id="tool" title="" placeholder="Enter Name" />
+      </p>
+      <!-- the tooltip is written in the content of js file  -->
+      <!-- <p>Name <input type="text" id="tool" title="Enter your name here "  placeholder="Enter Name"> </p> -->
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Accordian widget in jquery ui</h1>
+    <p>go to the accordian widget of the jquery-ui</p>
+    <!-- <div id="divvv">
+        <h2>HTML</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+        <h2>css</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+        <h2>dfjsna</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+        <h2>joiods</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+        <h2>bubjsdb</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+        <h2>bagdfasfh</h2>
+        <div>
+            <p>HTML STANDS FOR hypertext markup language. It is used to structure a  web page and it's a content</p>
+        </div>
+    </div> -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>MessageBox in jquery UI</h1>
+    First Name : <input type="text" />
+    <button id="btn-btn">Dialog Box</button>
+    <div id="dialog" title="title using attribute">
+      This is a customizable dialog box
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Autocomplete Widget in jquery UI</h1>
+    Favourite Language: <input type="text" id="input" />
+    <button id="btn1">Submit</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Widget Modification in jquery UI</h1>
+    <div id="dialogn" title="Title 1">This is a customizable dialog box</div>
+    <button id="btnX">GET</button>
+    <button id="btnY">SET</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Draggable interactioin in jquery UI</h1>
+    <div>
+      <div class="box">Box1</div>
+      <div class="box">Box2</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Sortable interactioin in jquery UI</h1>
+    <div>
+      <ul class="sort">
+        <li id="sortable">Item1</li>
+        <li id="sortable">Item2</li>
+        <li id="sortable">Item3</li>
+        <li id="sortable">Item4</li>
+        <li id="sortable">Item5</li>
+        <li id="sortable">Item6</li>
+        <li id="sortable">Item7</li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Resizable interactioin in jquery UI</h1>
+    <div>
+      <div>
+        <img src="images/Website_illustration.png" id="imageX" alt="Javascript">
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Theme Customization  in jquery UI</h1>
+    <div id="date" >
+    </div>
+    <!-- <div id="dialog1" title="Title1">
+        This is a customizable dialog box 
+    </div> -->
+  </body>
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="jqueryUI/jquery-ui.js" type="text/javascript"></script>
+  <script src="jqueryDp.js" type="text/javascript"></script>
+</html>
