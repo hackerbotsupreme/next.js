@@ -1,0 +1,97 @@
+jquery is open source 
+
+there are two ways to add jquery into project .
+1. cdn 
+what is cdn ? 
+cdn is content distributioin network , is a distributed network of 
+proxy servers and their data sectors  it provides high availibility performance by distributing 
+service related to end users provided that the user has an active internet connection . 
+2.download the jquery file, save into system , and use it .
+
+///////////////////////////////////////////////////////////////////
+
+go to jquery.com 
+you will see download , and that is the lateset version 
+
+you can also see three options based upon how yu want it like ,
+lightweight , css3 compilent , cross-browser version
+
+lets click on the download button 
+then it gives you ,
+
+jQuery
+
+Download the compressed, production jQuery 3.7.1
+
+Download the uncompressed, development jQuery 3.7.1
+
+Download the map file for jQuery 3.7.1
+
+You can also use the slim build, which excludes the ajax and effects modules:
+
+Download the compressed, production jQuery 3.7.1 slim build
+
+Download the uncompressed, development jQuery 3.7.1 slim build
+
+Download the map file for the jQuery 3.7.1 slim build
+
+link
+Downloading jQuery using npm or Yarn
+
+jQuery is registered as a package on npm. You can install the latest version of jQuery with the npm CLI command:
+
+npm install jquery
+
+As an alternative you can use the Yarn CLI command:
+
+yarn add jquery
+
+This will install jQuery in the node_modules directory. Within node_modules/jquery/dist/ you will find an uncompressed release, a compressed release, and a map file.
+link
+Downloading jQuery using Bower
+
+jQuery is also registered as a package with Bower. You can install the latest version of jQuery with the command:
+
+bower install jquery
+
+This will install jQuery to Bower's install directory, the default being bower_components. Within bower_components/jquery/dist/ you will find an uncompressed release, a compressed release, and a map file.
+
+The jQuery Bower package contains additional files besides the default distribution. In most cases you can ignore these files, however if you wish to download the default release on its own you can use Bower to install jQuery from one of the above urls instead of the registered package. For example, if you wish to install just the compressed jQuery file, you can install just that file with the following command:
+
+bower install https://code.jquery.com/jquery-3.7.1.min.js
+
+link
+jQuery Migrate Plugin
+
+We have created the jQuery Migrate plugin to simplify the transition from older versions of jQuery. The plugin restores deprecated features and behaviors so that older code will still run properly on newer versions of jQuery. Use the uncompressed development version to diagnose compatibility issues, it will generate warnings on the console that you can use to identify and fix problems. Use the compressed production version to simply fix compatibility issues without generating console warnings.
+
+There are two versions of Migrate. The first will help you update your pre-1.9 jQuery code to jQuery 1.9 up to 3.0. You can get that version here:
+
+Download the compressed, production jQuery Migrate 1.4.1
+
+Download the uncompressed, development jQuery Migrate 1.4.1
+
+The second version helps you update code to run on jQuery 3.0 or higher, once you have used Migrate 1.x and upgraded to jQuery 1.9 or higher:
+
+Download the compressed, production jQuery Migrate 3.4.0
+
+Download the uncompressed, development jQuery Migrate 3.4.0
+
+Using jQuery with a CDN
+
+CDNs can offer a performance benefit by hosting jQuery on servers spread across the globe. This also offers an advantage that if the visitor to your webpage has already downloaded a copy of jQuery from the same CDN, it won't have to be re-downloaded.
+
+
+///////////////////////////////////////////////////////////////////
+
+
+we will download uncompressed version -> 
+
+then it will land us at the code (press ctrl+s to save it ), now what is this 
+
+its written in js , this is basically a library with 
+code written for events , animations and many more .
+
+for cdn choose cdnjs cdn 
+
+///////////////////////////////////////////////////////////////////
